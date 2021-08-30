@@ -1,0 +1,165 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: hsl(0, 0%, 95%);
+}
+.container {
+  width: 87.5%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 12.2vh auto;
+  overflow: hidden;
+  border-radius: 0.5em;
+}
+.cards {
+  width: 100%;
+  aspect-ratio: 1/1.34;
+}
+.card-1 {
+  background-color: hsl(31, 77%, 52%);
+}
+.card-2 {
+  background-color: hsl(184, 100%, 22%);
+}
+.card-3 {
+  background-color: hsl(179, 100%, 13%);
+}
+figure {
+  width: 100%;
+  aspect-ratio: 1/0.38;
+  position: relative;
+}
+img {
+  width: 20%;
+  height: auto;
+  position: absolute;
+  top: 55%;
+  left: 15%;
+  transform: translateY(-50%);
+}
+
+.text {
+  margin: 0 auto;
+  text-align: start;
+  width: 70%;
+}
+.headers {
+  font-size: clamp(0.1em, 10.5vw, 4.5em);
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+}
+.paragraph {
+  font-size: clamp(0.1em, 4vw, 3em);
+  color: hsla(0, 0%, 100%, 0.75);
+  width: 100%;
+  padding: auto;
+  padding-top: 11%;
+  padding-bottom: 8.8%;
+  line-height: 165%;
+}
+.btn {
+  padding: 0;
+  width: 85%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+}
+.btn-container {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+.learn-more-btn {
+  font-size: clamp(0.1em, 4vw, 3em);
+  font-family: "Lexend Deca", sans-serif;
+  color: black;
+  text-decoration: none;
+  background: hsl(0, 0%, 95%);
+  border-radius: 8em;
+  width: 75%;
+  height: 0%;
+  padding: 7.7%;
+  text-transform: capitalize;
+  margin: 3% auto;
+  transform: translatey(-5%);
+}
+
+.btn-1 {
+  color: hsl(31, 77%, 52%);
+}
+.btn-2 {
+  color: hsl(184, 100%, 22%);
+}
+.btn-3 {
+  color: hsl(184, 100%, 22%);
+}
+.attribution {
+  font-size: 11px;
+  font-size: clamp(0.15em, 4vw, 5em);
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+}
+.attribution a {
+  font-weight: 500;
+  text-decoration: none;
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (min-width: 1025px) {
+  body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .container {
+    background-color: green;
+    flex-direction: row;
+    margin: 0;
+    width: 84%;
+  }
+  .cards {
+    /* background-color: yellow; */
+    width: 33.33%;
+    padding-bottom: 3%;
+  }
+  .headers {
+    font-size: 2.5em;
+    /* background-color: rgb(7, 92, 92); */
+    font-size: clamp(0.8em, 3.5vw, 3em);
+  }
+  .paragraph {
+    font-size: clamp(0.2em, 1.2vw, 2em);
+    width: 95%;
+  }
+  .btn {
+    margin-top: 10%;
+  }
+  .learn-more-btn {
+    font-size: 1em;
+    font-size: clamp(0.2em, 1.2vw, 2em);
+  }
+  .attribution {
+    font-size: 1.2em;
+  }
+}
